@@ -20,11 +20,15 @@ steve.learn(some_knowledge)
 steve.learn(some_more_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.flatten}' from Avi"
-#
-# jim = User.new
-# jim.first_name = "Jim"
-# jim.last_name = "Beam"
-#
-# jim.learn(some_knowledge)
-#
-# puts "Jim just learned this important knowledge: '#{jim.knowledge.first}' from Avi."
+
+jim = Student.new
+jim.first_name = "Jim"
+jim.last_name = "Beam"
+
+jims_knowledge = avi.teach
+more_jims_knowledge = avi.teach
+
+jim.learn(some_knowledge)
+jim.learn(more_jim_knowledge)
+
+puts "Jim just learned this important knowledge: '#{jim.knowledge}' from Avi."
